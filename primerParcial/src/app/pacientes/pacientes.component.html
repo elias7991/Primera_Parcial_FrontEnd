@@ -1,0 +1,27 @@
+<div *ngIf="pacientes.length>0">
+    <table border="1">
+        <!--POR AHORA, DESPUES HAY QUE FILTRAR COMO SE DEBE-->
+        <tr>
+            <td>ID</td>
+            <td>CEDULA</td>
+            <td>RUC</td>
+            <td>NOMBRE</td>
+            <td>APELLIDO</td>
+            <td>FECHA NACIMIENTO</td>
+            <td>TELEFONO</td>
+            <td>EMAIL</td>
+            <td>TIPO PERSONA</td>
+        </tr>
+        <tr *ngFor="let paciente of pacientes">
+            <td>{{ paciente.idPersona }}</td>
+            <td>{{ paciente.cedula }}</td>
+            <td>{{ paciente.ruc }}</td>
+            <td>{{ paciente.nombre }}</td>
+            <td>{{ paciente.apellido }}</td>
+            <td>{{ paciente.fechaNacimiento }}</td>
+            <td>{{ paciente.telefono }}</td>
+            <td>{{ paciente.email }}</td>
+            <td>{{ paciente.tipoPersona }}</td>
+        </tr>
+    </table>
+</div>

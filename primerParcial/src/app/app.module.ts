@@ -6,18 +6,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { ServicecategoriaService } from './service/servicecategoria.service';
+import { ServicesubcategoriaService } from './service/servicesubcategoria.service';
+import { SubCategoriaComponent } from './sub-categoria/sub-categoria.component';
+import { PacientesComponent } from './pacientes/pacientes.component';
+import { ServicepacientesService } from './service/servicepacientes.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    SubCategoriaComponent,
+    PacientesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [ServicecategoriaService],
+  /* en providers se agregan los servicios creados en app/service */
+  providers: [ServicecategoriaService, ServicesubcategoriaService, ServicepacientesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

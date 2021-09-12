@@ -9,11 +9,24 @@
 <h1 style="text-align:center">
   Bienvenido a {{ title }}
   <div style="text-align: center;">
+    
     <a routerLink="/categoria">Ver categorias</a>
     <br>
     <div>
       <router-outlet></router-outlet>
     </div>
+    
+    <!--el routerLink es el path del routing, esta en app-routing.module.ts-->
+    <a routerLink="/sub-categoria">Ver Sub Categorias</a>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+    <!--Boton para ver todos los pacientes por ahora-->
+    <a routerLink="/pacientes">Ver Pacientes</a>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+
   </div>
 
 </h1>

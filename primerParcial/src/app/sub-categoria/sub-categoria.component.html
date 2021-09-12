@@ -1,0 +1,14 @@
+<div *ngIf="sub_categorias.length>0">
+    <table border="1">
+        <tr>
+            <td>ID Tipo Producto</td>
+            <td>Descripción</td>
+            <td>ID Categoría</td>
+        </tr>
+        <tr *ngFor="let sc of sub_categorias">
+            <td>{{ sc.idTipoProducto }}</td>
+            <td>{{ sc.descripcion }}</td>
+            <td>{{ sc.idCategoria }}</td>
+        </tr>
+    </table>
+</div>
