@@ -10,6 +10,8 @@ import { ServicesubcategoriaService } from './service/servicesubcategoria.servic
 import { SubCategoriaComponent } from './sub-categoria/sub-categoria.component';
 import { PacientesComponent } from './pacientes/pacientes.component';
 import { ServicepacientesService } from './service/servicepacientes.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { ServicepacientesService } from './service/servicepacientes.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
   ],
   /* en providers se agregan los servicios creados en app/service */
   providers: [ServicecategoriaService, ServicesubcategoriaService, ServicepacientesService],
