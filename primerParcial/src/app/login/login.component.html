@@ -1,0 +1,28 @@
+<mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+
+
+<!--la etiqueta "mat-card" es un contenedor de material-->
+<mat-card>
+    <!--mat-card tiene secciones como:-->
+    <!--titulo-->
+    <mat-card-title>Login</mat-card-title>
+    <!--contenido principal destinado a texto-->
+    <mat-card-content>
+        <form>
+            <!--parte del formulario para el ingreso del nombre de usuario-->
+            <p>
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Nombre de usuario">
+                </mat-form-field>
+            </p>
+            <!--parte del formulario para el ingreso de la contraseña ligada al nombre de usuario ingresado-->
+            <p>
+                <mat-form-field>
+                    <input type="password" matInput placeholder="Contraseña">
+                </mat-form-field>
+            </p>
+            <!--Aquí necesitamos un botón del tipo submit para recuperar los valores ingresados-->
+            <button type="submit" mat-raised-button color="primary">Iniciar Sesión</button>
+        </form>
+    </mat-card-content>
+</mat-card>
