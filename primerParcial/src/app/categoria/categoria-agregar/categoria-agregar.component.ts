@@ -15,13 +15,13 @@ export class CategoriaAgregarComponent implements OnInit {
   ngOnInit(): void {
   }
   guardar(): void{
-  this.servicioCategoria.agregarCategoria(this.categoria).subscribe(
-    () => {
-      this.mensaje='Agregado exitosamente'
-    },
-    error => console.log("error: "+error)
-  );
-}
+    this.servicioCategoria.agregarCategoria(this.categoria).subscribe(
+      () => {
+        this.mensaje='Agregado exitosamente'
+      },
+      error => console.log("error: "+error)
+    );
+  }
 
 
 }
