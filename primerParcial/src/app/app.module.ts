@@ -10,7 +10,15 @@ import { ServicesubcategoriaService } from './service/servicesubcategoria.servic
 import { SubCategoriaComponent } from './sub-categoria/sub-categoria.component';
 import { PacientesComponent } from './pacientes/pacientes.component';
 import { ServicepacientesService } from './service/servicepacientes.service';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './login/login.component';
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+//importaciones de material design
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field'; 
+import {MatInputModule} from '@angular/material/input'; 
+import {MatDividerModule} from '@angular/material/divider'; 
+import {MatButtonModule} from '@angular/material/button'; 
 
 
 @NgModule({
@@ -18,13 +26,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     CategoriaComponent,
     SubCategoriaComponent,
-    PacientesComponent
+    PacientesComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule,
+    //BrowserAnimationsModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDividerModule,
+    MatButtonModule,
   ],
   /* en providers se agregan los servicios creados en app/service */
   providers: [ServicecategoriaService, ServicesubcategoriaService, ServicepacientesService],

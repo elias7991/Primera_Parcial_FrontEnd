@@ -1,0 +1,36 @@
+<!--similar al div de HTML-->
+<mat-card>
+    <!--seccion de titulo de mat-card-->
+    <mat-card-title>Inicia Sesión</mat-card-title>
+    <!--divisor que se encuentra en el modulo MatDividerModule-->
+    <mat-divider></mat-divider>
+    <p><br></p>
+    <!--seccion especial de contenido de tipo texto de mat-card-->
+    <mat-card-content>
+        <!--introducimos el formulario de login-->
+        <form>
+
+            <p>
+                <!--este ya no forma parte de mat-card, sino que es un componente de formulario-->
+                <mat-form-field appearance="fill">
+                    <!--agrega la etiqueta sobre el campo de texto-->
+                    <mat-label>Nombre de usuario</mat-label>
+                    <!--necesariamente deben agregarle el matInput para que reconozca como un input de material design-->
+                    <input matInput type="text">
+                </mat-form-field>
+            </p>
+    
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Contraseña</mat-label>
+                    <input matInput type="password">
+                </mat-form-field>
+            </p>
+            <!--necesitamos tomar los valores ingresados por teclado mediante un boton-->
+            <button type="submit" mat-raised-button color="primary">Iniciar</button>
+        </form>
+
+        
+
+    </mat-card-content>
+</mat-card>
