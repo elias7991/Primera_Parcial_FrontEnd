@@ -13,12 +13,16 @@ import { ServicepacientesService } from './service/servicepacientes.service';
 import { LoginComponent } from './login/login.component';
 //import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+//importacion de formulario reactivo
+import { ReactiveFormsModule } from '@angular/forms';
+
 //importaciones de material design
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field'; 
 import {MatInputModule} from '@angular/material/input'; 
 import {MatDividerModule} from '@angular/material/divider'; 
-import {MatButtonModule} from '@angular/material/button'; 
+import {MatButtonModule} from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 
 
 @NgModule({
@@ -34,11 +38,15 @@ import {MatButtonModule} from '@angular/material/button';
     AppRoutingModule,
     HttpClientModule,
     //BrowserAnimationsModule,
+    //formulario reactivo
+    ReactiveFormsModule,
+    //modulos de material design
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
     MatDividerModule,
     MatButtonModule,
+    BrowserAnimationsModule,
   ],
   /* en providers se agregan los servicios creados en app/service */
   providers: [ServicecategoriaService, ServicesubcategoriaService, ServicepacientesService],
