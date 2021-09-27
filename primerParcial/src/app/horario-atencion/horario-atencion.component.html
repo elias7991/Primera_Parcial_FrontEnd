@@ -1,0 +1,15 @@
+<div *ngIf="horarioAtencion.length>0">
+    <table border="1">
+      <tr>
+        <td>Id</td>
+        <td>Dia</td>
+        <td>Empleado</td>
+      </tr>
+      <tr *ngFor="let p of horarioAtencion">
+        <td>{{p.idPersonaHorarioAgenda}}</td>
+        <td>{{p.dia}}</td>
+        <td>{{p.idEmpleado.nombre}}</td>
+      </tr>
+    </table>
+  </div>
+  
